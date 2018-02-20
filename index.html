@@ -1,7 +1,95 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Caryn's Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+	<div id="main-container">
+	<center>
+	<h1 class="welcome">Hello, I am <strong id="name-bold">Caryn</strong>.</h1>
+	<h4 class="sub-welcome">(Psst, hover over the fruits to navigate)</h4>
+
+	<div class="nav-container">
+		<div class="icon-container">
+			<a id="nav-anchor-about" class="nav-anchor"><img class="nav-icons" src="images/img-watermelon.png"><p><u id="nav-about">ABOUT ME</u></p></a>
+		</div>
+
+		<div class="icon-container">
+			<a id="nav-anchor-portfolio" class="nav-anchor"><img class="nav-icons" src="images/img-orange.png"><p><u id="nav-portfolio">PORTFOLIO</u></p></a>
+		</div>
+
+		<div class="icon-container">
+			<a id="nav-anchor-contact" class="nav-anchor"><img class="nav-icons" src="images/img-kiwi.png"><p><u id="nav-contact">CONTACT</u></p></a>
+		</div>
+	</div>
+
+	<div class="resume-container">
+		<a id="resume-anchor" href="Heng_Zhi_Xuan_Caryn_Resume.pdf" target="_blank">Grab a Copy of my Resume</a>
+	</div>
+
+	</center>
+	</div>
+
+
+	<div id="modal-container-about" class="modal-container">
+
+		<!-- ABOUT ME content -->
+		<div class="modal-content" id="aboutme">
+			<a class="modal-close">×</a>
+			<span>
+				<center><img id="profile-photo" src="images/img-profile.jpg">
+				<h2>Caryn Heng</h2></center>
+				<p>I am a Year 2 NUS Computer Science undergraduate fascinated by all things technology. Also a quick learner who seeks continuous improvement.<br>
+				I enjoy fun and clean designs that brings smiles on people's faces. I am also interested in Software Engineering and Information Security.</p>
+				<p><b>Currently looking for:</b> An internship position this summer (starting May 2018)</p>
+			</span>
+		</div>
+	</div>
+
+	<div id="modal-container-portfolio" class="modal-container">
+		<!-- PORTFOLIO content -->
+		<div class="modal-content" id="portfolio">
+			<a class="modal-close">×</a>
+			<h2>Modal Header</h2>
+			<p>Some text in the Modal Body</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+			<p>Some other text...</p>
+		</div>
+	</div>
+
+	<div id="modal-container-contact" class="modal-container">
+		<!-- CONTACT content -->
+		<div class="modal-content" id="contact">
+			<a class="modal-close">×</a>
+			<h2>Modal Header</h2>
+			<p>Some text in the Modal Body</p>
+			<p>Some other text...</p>
+		</div>
+	</div>
+
 </body>
 </html>
