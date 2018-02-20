@@ -1,0 +1,274 @@
+/* Downloaded Fonts */
+@font-face {
+    font-family: 'phenomena';
+    src: url('fonts/phenomena-regular-webfont.woff2') format('woff2'),
+         url('fonts/phenomena-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'phenomena';
+    src: url('fonts/phenomena-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/phenomena-extrabold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'phenomena';
+    src: url('phenomena-light-webfont.woff2') format('woff2'),
+         url('phenomena-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '56th_street';
+    src: url('fonts/56thstreet-regular-webfont.woff2') format('woff2'),
+         url('fonts/56thstreet-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Style */
+body {
+	background-color: #E5F0FF;
+	color: #586D9A;
+	font-family: 'phenomena';
+	font-weight: normal;
+	letter-spacing: 0.05em;
+	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s; /* For Safari */
+}
+
+p {
+	font-size: 14px;
+	font-family: "Kohinoor Bangla";
+	font-weight: lighter;
+}
+
+/* Containers */
+div {
+
+}
+
+#main-container {
+	display: inline-block;
+	margin: 4.5%;
+}
+
+.nav-container {
+	width: 61%;
+	margin-top: 8%;
+}
+
+.icon-container {
+	display: inline-block;
+	display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+	width: 30%;
+	text-align: center;
+}
+
+.resume-container {
+	text-align: center;
+	margin-top: 5%;
+}
+
+
+/* Modals */
+.modal-container {
+	position: fixed;
+	display: none;
+	padding-top: 7%; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	overflow: hidden;   
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+	border-radius: 10px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    height: 70%;
+    width: 45%;
+    overflow: scroll;  
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 26px 6% 26px 6%;
+}
+
+.modal-content .modal-close {
+	font-size: 40px;
+	position: fixed;
+	width: 45%;
+	text-align: right;
+}
+
+.modal-content#aboutme {
+	padding-top: 0%;
+}
+
+.modal-content#aboutme .modal-close{
+	color: #fefefe;
+}
+
+.modal-content#aboutme span{
+	position: relative;
+	z-index: 1;
+	top: 100px;
+	font-family: "Kohinoor Bangla";
+	font-weight: lighter;
+}
+
+.modal-content#aboutme:before {
+	content: '';
+	position: absolute;
+	left: -10%;
+	width:120%;
+	height:32%;
+	background: #586D9A;
+}
+
+.modal-content#aboutme:after {
+	content: '';
+	position: absolute;
+}
+
+.modal-content#portfolio {
+
+}
+
+.modal-content#contact {
+
+}
+
+
+/* Headers */
+h1, h3, h4, h5, h6 {
+	font-family: 'phenomena';
+	font-weight: normal;
+}
+
+h2 {
+	font-family: 'phenomena';
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.welcome {
+	font-weight: lighter;
+	font-size: 29pt;
+	margin-bottom: -18px;
+}
+
+.sub-welcome {
+	font-size: 14pt;
+}
+
+
+/* Text Styles */
+#name-bold {
+	font-family: 'phenomena';
+	font-size: 37pt;
+}
+
+p {
+
+}
+
+::-moz-selection { /* For Firefox */
+    background: #C4D7F6;
+}
+
+::selection {
+    background: #C4D7F6;
+}
+
+
+/* Image Styles */
+.nav-icons {
+	width: 74%;
+}
+
+#profile-photo {
+	width: 18%;
+	border: 4px solid #fefefe;
+	border-radius: 50%;
+	text-align: center;
+	margin-bottom: -2%;
+}
+
+
+/* Anchor Styles */
+a {
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s; /* For Safari */
+	color: #586D9A;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: normal;
+}
+
+.nav-anchor {
+	background-color: none;
+	border: none;
+}
+
+.icon-container a p {
+	font-family: '56th_street';
+	font-size: 13.5pt;
+	padding-top: 10pt;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+
+.icon-container a:hover p {
+	visibility: visible;
+	opacity: 1;
+	transition-delay:0s;
+}
+
+#nav-about {
+	padding-bottom: 4pt;
+	text-decoration: none;
+	border-bottom: 4.5px solid #F98080;
+}
+
+#nav-portfolio {
+	padding-bottom: 4pt;
+	text-decoration: none;
+	border-bottom: 4.5px solid #FCA04F;
+}
+
+#nav-contact {
+	padding-bottom: 4pt;
+	text-decoration: none;
+	border-bottom: 4.5px solid #B6CD8B;
+}
+
+
+#resume-anchor {
+	padding: 12px 25px 12px 25px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	font-size: 18pt;
+	overflow: hidden;
+}
+
+#resume-anchor:hover {
+	background-color: #647CAF;
+	color: #E5F0FF;
+}
