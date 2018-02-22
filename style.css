@@ -48,6 +48,14 @@ p {
 	font-weight: lighter;
 }
 
+.tag {
+	background-color: none;
+	border: 1px solid #9AADCC;
+	border-radius: 10px;
+	padding: 3pt;
+	white-space: nowrap;
+}
+
 /* Containers */
 div {
 
@@ -74,6 +82,11 @@ div {
 .resume-container {
 	text-align: center;
 	margin-top: 5%;
+}
+
+.tag-container {
+	text-align: center;
+	line-height: 2.5;
 }
 
 
