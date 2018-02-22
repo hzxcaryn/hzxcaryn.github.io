@@ -227,6 +227,10 @@ p {
 	margin-bottom: -2%;
 }
 
+.header-icons {
+	height: 23px;
+}
+
 
 /* Anchor Styles */
 a {
