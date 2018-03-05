@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Caryn's Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Overlock:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -41,9 +43,9 @@
 	<div id="modal-container-about" class="modal-container">
 
 		<!-- ABOUT ME content -->
-		<div class="modal-content" id="aboutme">
-			<a class="modal-close">×</a>
-			<span>
+		<div class="modal-box" id="aboutme">
+			<div class="modal-close-holder"><a class="modal-close">×</a></div>
+			<div class="modal-content">
 				<center><img id="profile-photo" src="images/img-profile.jpg">
 				<h2>Caryn Heng</h2></center>
 				<p>I am a Computer Science undergraduate fascinated by all things technology, and a quick learner who seeks continuous improvement.
@@ -68,18 +70,20 @@
 					<p>Some relevant modules:
 					<ul>
 					<li>CS1010S Programming Methodology</li>
+					<li>MA1521 Calculus for Computing</li>
 					<li>CS2020 Data Structures and Algorithms (Accelerated)</li>
+					<li>CS3230 Design and Analysis of Algorithms</li>
 					<li>CS2100 Computer Organisation</li>
 					<li>CS2103T Software Engineering</li>
 					<li>CS2105 Introduction to Computer Networks</li>
 					<li>CS2106 Introduction to Operating Systems</li>
 					<li>CS2107 Introduction to Information Security</li>
-					<li>MA1521 Calculus for Computing</li>
 					</ul>
 					</p>
 				</p>
 
-				<p><h2><img class="header-icons" src="images/icon-tools.png"> Skills</h2>
+				<p>
+					<h2><img class="header-icons" src="images/icon-tools.png"> Skills</h2>
 					<div class="tag-container">
 					<a class="tag">Python</a>
 					<a class="tag">Java</a>
@@ -89,51 +93,176 @@
 					<a class="tag">Firebase</a>
 					<a class="tag">Photshop</a>
 					<a class="tag">R Studio</a>
-					<a class="tag">Microsoft Office</a>
 					<a class="tag">Keynote</a>
 					</div>
 				</p>
-				<p><b>Currently Working On:</b> Javascript, C/C++
-				</p>				
-			</span>
+				<p><b>Currently Working On:</b> JavaScript, jQuery, C/C++</p>		
+
+				<p>
+					<h2><img class="header-icons" src="images/icon-tools.png"> Cocurricular Activities</h2>
+					<p><b>Assistant Student Relations Secretariat</b> | AY2016/17<br>
+					NUS Students Computing Club, 19th Management Committee<br>
+					<ul><li>The voice of the student body. The job requires analysing and summarising data we collected from the students through surveys, and feedback it to the club to call for action.</li></ul></p>
+					<br>
+					<p><b>Receive and Give (RAG) Committee - Float Designer cum Green IC</b> | AY2016/17<br>
+					NUS Students Computing Club
+					<ul><li>RAG is a dance performance, with intricate floats, put up to thank the general public for their generous donations for the various beneficiaries during Flag Day. Even though RAG itself is just the performance, the preparation period spans across the entire Summer, and the planning phase for the committee was conducted during school semesters. My role includes coming up with designs to decorate the floats, collecting recycled materials and finding creative ways to utilise them, building the structures and decorating them.</li></ul></p>
+					<br>
+					<p><b>Freshmen Orientation Week (FOW) Committee - Prologs</b> | AY2016/17<br>
+					NUS Students Computing Club
+					<ul><li>FOW is an orientation camp for the freshmen enrolling into School of Computing. My role as a Prologs member and the Day4 IC includes planning and coming up with games and activites, testing out the games to ensure they are safe and fun, keeping track of the logistics, being station masters, and overseeing the camp programmes as a whole on Day4.</li></ul></p>
+				</p>
+			</div>
 		</div>
 	</div>
 
 	<div id="modal-container-portfolio" class="modal-container">
 		<!-- PORTFOLIO content -->
-		<div class="modal-content" id="portfolio">
-			<a class="modal-close">×</a>
-			<h2>Modal Header</h2>
-			<p>Some text in the Modal Body</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
-			<p>Some other text...</p>
+		<div class="modal-box" id="portfolio">
+			<div class="modal-close-holder"><a class="modal-close">×</a></div>
+			<div class="modal-content portfolio-main">
+				<h2><img class="header-icons" src="images/icon-bag.png"> Work Experience</h2>
+				<strong>Teaching Assistant</strong> | Aug 2017 - Dec 2017<br>
+					National University of Singapore, School of Computing<br>
+					Module: CS1010S Programming Methodology
+				<p><ul>
+						<li>In charge of 2 tutorial classes which is taught in Python.</li>
+						<li>Grade student's problem sets</li>
+						<li>Invigilate and review practical exam codes</li>
+				</ul></p>
+
+				<h2>My Projects</h2>
+				<div class="project-wrapper-container">
+					<div class="portfolio-container-left"><img id="portfolio-website-more" class="portfolio-images" src="images/mockup-portfolio.png"></div>
+					<div class="portfolio-container-right">
+						<strong>Portfolio Website</strong> | Feb 2018<br>
+						Yes, this one that you are looking at now. The website is designed to show my inclination towards fun, cute, and simple designs.<br>
+						<b>Tools:</b> HTML, CSS, JavaScript, jQuery<br>
+					</div>
+				</div>
+				<div class="project-options-container">
+					<a id="portfolio-website-more" class="more-info-button project-options-button">Learn More</a>
+					<a class="project-options-button link-out-button" href="https://github.com/hzxcaryn/hzxcaryn.github.io" target="_blank">Get Repo</a>
+					<div id="portfolio-website-more" class="portfolio-more-info">
+						The website is designed to show my inclination towards fun, cute, and simple designs. This website was coded from scratch without using bootstrap or any frameworks. It may sound abit stupid but I did it with the intention of solidifying my HTML and CSS foundation since it has been some time since I last used them. There's still lots that I need to improve on though!
+					</div>
+				</div>
+
+				<div class="project-wrapper-container">
+					<div class="portfolio-container-left"><img id="trashit-more" class="portfolio-images" src="images/mockup-trashit.png"></div>
+					<div class="portfolio-container-right">
+						<strong>TrashIT</strong> | Feb 2018<br>
+						A smart trash bin built for <a class="linkies" href="http://hackomania.geekshacking.com/">HackOMania 2018</a> - IoT for Smart Homes. Comes along with a dashboard web app to reflect household food waste statistics.<br>
+						<b>Awards:</b> 3rd Place<br>
+						<b>Tools:</b> Pi 3, Google Cloud, Python, HTML, CSS, jQuery<br>
+					</div>
+				</div>
+				<div class="project-options-container">
+					<a id="trashit-more" class="more-info-button project-options-button">Learn More</a>
+					<a class="project-options-button video-button" href="https://www.youtube.com/watch?v=wPnET7-9dOI" target="_blank">Watch Video</a>
+					<a class="project-options-button link-out-button" href="https://github.com/hzxcaryn/trashIT-web" target="_blank">Get Repo</a>
+					<div id="trashit-more" class="portfolio-more-info">
+						<b>Team members:</b> Caryn, Jeremy, Francis, Shannon, Wayne<br><br>
+						Overbuying groceries is a common problem in many households, and we identified that this problem arises when families do not know how to estimate the family's overall consumption. These extra food stays in the fridge or on the shelves, turns bad, and gets discarded.<br>
+						In this 24 hour hackathon, my team and I hence decided to build a smart trash bin which sorts out food waste from the other waste, and provides the family's food waste statistics on a dashboard. To identify the waste, using a Raspberry Pi, our smart bin takes a photo of the waste products, and uses Good Cloud Vision API to obtain some keywords based on the image captured. We then filter out the keywords to identify the object being discarded.<br>
+						The dashboard also allows users to input details of their family members(such as their age, weight, height) so that we can calculate their recommended calorie intake, and provide better suggestions for the family to plan their grocery shopping.
+					</div>
+				</div>
+
+				<div class="project-wrapper-container">
+					<div class="portfolio-container-left"><img class="portfolio-images" src="images/handroid-photo.png"></div>
+					<div class="portfolio-container-right">
+						<strong>Handroid</strong> | Dec 2017<br>
+						Built for <a class="linkies" href="https://www.facebook.com/nusroboticmakercomp17/">Robots@NUS 2017</a> (NUS Robotic Maker Competition) targeted at helping the elderly with physcially tedious tasks.<br>
+						<b>Awards:</b> Tony Stark Prize (2nd Place)<br>
+						<b>Tools:</b> Python, EV3, EV3dev, 3D printing, Wix<br>
+					</div>
+				</div>
+				<div class="project-options-container">
+					<a id="handroid-more" class="more-info-button project-options-button">Learn More</a>
+					<a class="project-options-button video-button" href="https://www.youtube.com/watch?time_continue=10&v=a6JrmEbgTbM" target="_blank">Watch Video</a>
+					<a class="project-options-button link-out-button" href="https://handroid.wixsite.com/home" target="_blank">Visit Website</a>
+					<div id="handroid-more" class="modal-content portfolio-more-info">
+						<b>Team members:</b> Caryn, Francis, Shannon<br><br>
+						The Handroid is a robotic arm that mimics that of a human's. It aims to aid elderly in their daily tasks and can be controlled wirelessly by a remote control which translates the elderly's actions into instructions for the robotic arm's movement. Our users are then able to use our robotic arm to perform tasks that are too physically tedious for them, such as tasks that involve carrying heavy objects.<br>
+						A project website was also put together as part of our promotional effort, and also to document our progress.
+					</div>
+				</div>
+
+				<div class="project-wrapper-container">
+					<div class="portfolio-container-left"><img class="portfolio-images" src="images/mockup-oamigo.png"></div>
+					<div class="portfolio-container-right">
+						<strong>O'amigo</strong> | May 2017 - Aug 2017<br>
+						An IOS application for shoppers finding others to share deals. I coded and designed the app layout and designed the icons used.<br>
+						<b>Tools:</b> Swift, Xcode, Firebase, Facebook API, Photoshop<br>
+					</div>
+				</div>
+				<div class="project-options-container">
+					<a id="oamigo-more" class="more-info-button project-options-button">Learn More</a>
+					<a class="project-options-button link-out-button" href="https://github.com/hzxcaryn/Oamigo-ios" target="_blank">Get Repo</a>
+					<div id="oamigo-more" class="modal-content portfolio-more-info">
+						<b>Team members:</b> Caryn, Vanessa<br><br>
+						An IOS application built for Orbital (CP2106 Independent Software Development Project) which spans across the summer break.<br>
+						Ever encountered the situation "Buy 5 for the price of 3" and but you only have 2 items that you are interested in purchasing?<br>
+						O'amigo targets shoppers who wants to enjoy the discounted prices without hitting the quota  themselves, by matching them with someone to share the deal with!<br>
+						Application layout and all icons used are designed and coded by me. Product is still at its prototype stage as progress was hindered by the multiple committee positions I took up during the last summer break. May consider to pick it up again when I have the time to!
+					</div>
+				</div>
+
+				<div class="project-wrapper-container">
+					<div class="portfolio-container-left"><img class="portfolio-images" src="images/grpbot-logo.png"></div>
+					<div class="portfolio-container-right">
+						<strong>Group Manager Bot</strong> | Jan 2018<br>
+						A just-for-fun telegram bot to remind people to mind their language in group chats. Built for a hackathon, <a class="linkies" href="http://hacknroll.nushackers.org/">Hack and Roll 2018</a>.<br>
+						<b>Tools:</b> Python, Telegram<br>
+					</div>
+				</div>
+				<div class="project-options-container">
+					<a id="group-manager-bot-more" class="more-info-button project-options-button">Learn More</a>
+					<a class="project-options-button link-out-button" href="https://github.com/hzxcaryn/GroupManagerBot-telegram" target="_blank">Get Repo</a>
+					<div id="group-manager-bot-more" class="modal-content portfolio-more-info">
+						<b>Team members:</b> Caryn, Jeremy, Vanessa, Natania<br><br>
+						Being newbies to telegram chat bots, we decided to make use of this chance to learn how to build one.<br>
+						We got inspiration from our dear friend Francis, who is a fairly annoying person but does not like the use of uncouth language. Hence, we created a Telegram bot as an attempt to replicate his behaviour. Yes, you guessed it, it's an annoying Telegram bot which actually reminds you to mind your language, and at the same time randomly remind you of the number of days to finals! (and more annoying features haha)
+					</div>
+				</div>
+
+				<div class="project-wrapper-container">
+					<div class="portfolio-container-left"><img class="portfolio-images" src="images/img-cs2101-slides.png"></div>
+					<div class="portfolio-container-right">
+						<strong>Retro Style Slides</strong> | Feb 2017<br>
+						Designed the presentation slides on Intercultural Communication for a module, CS2101 Effective Communication for Computing Professionals. Slides were made from blank slides, without any template. <br>
+						<b>Tools:</b> Keynote<br>
+					</div>
+				</div>
+				<div class="project-options-container">
+					<a id="retro-slides-more" class="more-info-button project-options-button">Learn More</a>
+					<a class="project-options-button link-out-button" href="cs2101-slides.pdf" target="_blank">View Slides</a>
+					<div id="retro-slides-more" class="modal-content portfolio-more-info">
+						Designed the presentation slides on Intercultural Communication for a module, CS2101 Effective Communication for Computing Professionals. Slides were made from blank slides, without any template.
+					</div>
+				</div>
+
+			</div>
 		</div>
 	</div>
 
 	<div id="modal-container-contact" class="modal-container">
 		<!-- CONTACT content -->
-		<div class="modal-content" id="contact">
-			<a class="modal-close">×</a>
-			<h2>Modal Header</h2>
-			<p>Some text in the Modal Body</p>
-			<p>Some other text...</p>
+		<div class="modal-box" id="contact">
+			<div class="modal-close-holder"><a class="modal-close">×</a></div>
+			<h2><img class="header-icons" src="images/icon-phone.png"> Contact Me</h2>
+			<p>If you have any internship/job offers, or any projects that you would like me to work on, do feel free to contact me! :)</p>
+			<p><b>Email:</b> <a class="linkies" href="mailto: hzxcaryn@gmail.com" target="_blank">hzxcaryn@gmail.com</a></p>
+			<p><b>Phone:</b> +65 90930326</p>
+			<p><b>Location:</b> Singapore</p><br>
+			<center>
+				<a id="icon-facebook" class="social-media fa fa-facebook-square" href="https://www.facebook.com/hzxcaryn" target="_blank"></a>
+				<a id="icon-instagram" class="social-media fa fa-instagram" href="https://www.instagram.com/hzxcaryn/"></a>
+				<a id="icon-github" class="social-media fa fa-github-alt" href="https://github.com/hzxcaryn"></a>
+				<a id="icon-linkedin" class="social-media fa fa-linkedin-square" href="https://www.linkedin.com/in/caryn-heng-00b650148/"></a>
+			</center>
+			<br>
 		</div>
 	</div>
 
