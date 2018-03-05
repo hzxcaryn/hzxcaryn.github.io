@@ -16,14 +16,6 @@
 }
 
 @font-face {
-    font-family: 'phenomena';
-    src: url('phenomena-light-webfont.woff2') format('woff2'),
-         url('phenomena-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: '56th_street';
     src: url('fonts/56thstreet-regular-webfont.woff2') format('woff2'),
          url('fonts/56thstreet-regular-webfont.woff') format('woff');
@@ -35,16 +27,17 @@
 body {
 	background-color: #E5F0FF;
 	color: #586D9A;
-	font-family: 'phenomena';
+	font-family: 'Overlock', serif;
 	font-weight: normal;
 	letter-spacing: 0.05em;
 	transition-duration: 0.4s;
 	-webkit-transition-duration: 0.4s; /* For Safari */
-	font-size: 14px;
+	font-size: 16px;
+	line-height: 1.4;
 }
 
 p {
-	font-family: "Kohinoor Bangla";
+	font-family: "Overlock", serif;
 	font-weight: lighter;
 }
 
@@ -89,6 +82,118 @@ div {
 	line-height: 2.5;
 }
 
+.project-wrapper-container {
+	overflow: hidden;
+	margin-bottom: 10pt;
+}
+
+.project-options-container {
+	width: 100%;
+	padding: 15pt;
+	background-color: #f9f9f9;
+	margin-bottom: 50px;
+	text-align: center;
+	border-radius: 8px;
+	-webkit-border-radius: 8px; 
+	-moz-border-radius: 8px; 
+}
+
+.project-options-button {
+	display: inline-block;
+	background-color: #9AADCC;
+	color: #f9f9f9;
+	border: 1px solid #9AADCC;
+	border-radius: 10px;
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	width: 100pt;
+	padding: 7pt 12pt 7pt 12pt;
+	margin: 0 5pt 0 5pt;
+	white-space: nowrap;	
+}
+
+.more-info-button:after {
+	font-family: FontAwesome;
+	content:"\f107";
+	padding-left: 5pt;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	position: absolute;
+	opacity: 0;
+}
+
+.more-info-button:hover:after {
+	opacity: 1;
+}
+
+.more-info-button:hover {
+	cursor: pointer;
+}
+
+.link-out-button:after {
+	font-family: FontAwesome;
+	content:"\f105";
+	padding-left: 5pt;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	position: absolute;
+	opacity: 0;
+}
+
+.video-button:hover:after {
+	opacity: 1;
+}
+
+.video-button:after {
+	font-family: FontAwesome;
+	font-size: 11pt;
+	content:"\f008";
+	padding-left: 5pt;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	position: absolute;
+	opacity: 0;
+}
+
+.link-out-button:hover:after {
+	opacity: 1;
+}
+
+.portfolio-more-info {
+	margin-top: 20pt;
+	padding: 5pt;
+	text-align: left;
+	display: none;
+}
+
+.portfolio-main {
+	display: block;
+}
+
+.portfolio-container-left {
+	float: left;
+	width: 50%;
+}
+
+.portfolio-container-right {
+	float: right;
+	width: 47%;	
+}
+
+.portfolio-images {
+	width: 100%;
+}
+
+.contact-container-left {
+	float: left;
+	width: 46%;
+}
+
+.contact-container-right {
+	float: right;
+	width: 46%;
+}
+
 
 /* Modals */
 .modal-container {
@@ -104,25 +209,34 @@ div {
 	background-color: rgba(0,0,0,0.4); 
 }
 
-.modal-content {
+.modal-box {
 	border-radius: 10px;
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    height: 70%;
+    max-height: 70%;
     width: 45%;
     overflow: scroll;  
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     padding: 26px 6% 26px 6%;
 }
 
-.modal-content .modal-close {
-	font-size: 40px;
-	position: fixed;
+.modal-close-holder {
 	width: 48%;
 	text-align: right;
+	position: fixed;
+	font-size: 40px;
+	z-index: 4;
+}
+
+.modal-close {
+}
+
+.modal-box .modal-content {
+	position: relative;
+	z-index: 1;
 }
 
 .modal-close:hover {
@@ -130,23 +244,17 @@ div {
 	cursor: pointer;
 }
 
-.modal-content#aboutme {
+.modal-box#aboutme {
 	padding-top: 0%;
 }
 
-.modal-content#aboutme .modal-close{
-	color: #fefefe;
-}
-
-.modal-content#aboutme span{
-	position: relative;
-	z-index: 1;
+.modal-box#aboutme .modal-content {
 	top: 100px;
-	font-family: "Kohinoor Bangla";
+	font-family: "Overlock", serif;
 	font-weight: lighter;
 }
 
-.modal-content#aboutme:before {
+.modal-box#aboutme:before {
 	content: '';
 	position: absolute;
 	left: 0%;
@@ -158,22 +266,22 @@ div {
 	background-size: cover;
 }
 
-.modal-content#aboutme:after {
+.modal-box#aboutme:after {
 	content: '';
 	position: absolute;
 }
 
-.modal-content#portfolio {
+.modal-box#portfolio {
 
 }
 
-.modal-content#contact {
+.modal-box#contact {
 
 }
 
 
 /* Headers */
-h1, h3, h4, h5, h6 {
+h1, h3, h4 {
 	font-family: 'phenomena';
 	font-weight: normal;
 }
@@ -182,6 +290,15 @@ h2 {
 	font-family: 'phenomena';
 	font-weight: bold;
 	font-size: 35px;
+}
+
+h5 {
+	font-family: '56th_street';
+	font-size: 13pt;
+}
+
+h6 {
+	display: inline;
 }
 
 .welcome {
@@ -220,7 +337,7 @@ p {
 }
 
 #profile-photo {
-	width: 18%;
+	width: 110px;
 	border: 4px solid #fefefe;
 	border-radius: 50%;
 	text-align: center;
@@ -240,8 +357,31 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	
+a.linkies {
+  position: relative;
+  text-decoration: none;
+  font-style: italic;
+}
+
+a.linkies:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #586D9A;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a.linkies:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .nav-anchor {
@@ -292,6 +432,7 @@ a:hover {
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
+	font-family: 'phenomena';
 	font-size: 18pt;
 	overflow: hidden;
 }
@@ -299,4 +440,32 @@ a:hover {
 #resume-anchor:hover {
 	background-color: #647CAF;
 	color: #E5F0FF;
+}
+
+/* Social Media Buttons */
+.social-media-container {
+	text-align: center;
+}
+
+.social-media {
+	display: inline-block;
+	font-size: 50px;
+	padding: 10pt;
+	border-radius: 20%;
+}
+
+#icon-facebook:hover {
+	color: #3b5998;
+}
+
+#icon-instagram:hover {
+	color: #400080;
+}
+
+#icon-github:hover {
+	color: black;
+}
+
+#icon-linkedin:hover {
+	color: #0077B5;
 }
