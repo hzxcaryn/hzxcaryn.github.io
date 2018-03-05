@@ -21,7 +21,7 @@ function closePopup(popup) {
 	});
 
 	// Prevent clicks in modal-content to close popup
-	$(".modal-content").click(function(e) {
+	$(".modal-box").click(function(e) {
 		e.stopPropagation();
 	});
 
@@ -31,22 +31,36 @@ function closePopup(popup) {
 	});
 }
 
+var moreInfoDiv;
+function learnMore(moreInfoDiv) {
+	$(".more-info-button"+moreInfoDiv).click(function() {
+		var infoDiv = $('.portfolio-more-info' + moreInfoDiv);
+		if (infoDiv.css('display') == 'none') {
+			infoDiv.fadeIn();
+		} else {
+			infoDiv.css('display', 'none');
+		}
+	});
+}
+
 
 $(document).ready(function() {
 	// MODALS
-	popupAbout = $('#modal-container-about');
-	popupPortfolio = $('#modal-container-portfolio');
-	popupContact = $('#modal-container-contact');
-	clickmeAbout = $('#nav-anchor-about');
-	clickmePortfolio = $('#nav-anchor-portfolio');
-	clickmeContact = $('#nav-anchor-contact');
+	var modals = [$('#modal-container-about'), $('#modal-container-portfolio'), $('#modal-container-contact')];
+	var clickmeModals = [$('#nav-anchor-about'), $('#nav-anchor-portfolio'), $('#nav-anchor-contact')];
 
-	showPopup(popupAbout, clickmeAbout);
-	showPopup(popupPortfolio, clickmePortfolio);
-	showPopup(popupContact, clickmeContact);
+	// MORE INFO DIVS (strings)
+	var moreInfoDivs = ['#portfolio-website-more', '#trashit-more', '#handroid-more', '#oamigo-more', '#group-manager-bot-more', '#retro-slides-more'];
 
-	closePopup(popupAbout);
-	closePopup(popupPortfolio);
-	closePopup(popupContact);
+	for (i = 0; i < modals.length; i++) {
+		showPopup(modals[i], clickmeModals[i]);
+		closePopup(modals[i]);
+	}
+
+	if ($('.portfolio-main').css("display") == "block") {
+		for (i = 0; i < moreInfoDivs.length; i++) {
+			learnMore(moreInfoDivs[i]);
+		}
+	}
 
 });
