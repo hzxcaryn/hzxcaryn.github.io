@@ -264,6 +264,7 @@ div {
 	background-image: url("images/img-fruitbanner.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 10px 10px 0px 0px
 }
 
 .modal-box#aboutme:after {
