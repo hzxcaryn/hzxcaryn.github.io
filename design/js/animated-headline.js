@@ -163,6 +163,7 @@ $( document ).ready(function() {
 
     var generalSidebarHeight = $sticky.innerHeight();
     var stickyTop = $sticky.offset().top;
+    var stickyBtm = stickyTop + $sticky.height();
     var stickOffset = 0;
     var stickyStopperPosition = $stickyStopper.offset().top;
     var stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset;
@@ -172,13 +173,16 @@ $( document ).ready(function() {
 
     $(window).scroll(function(){ // scroll event
       var windowTop = $(window).scrollTop(); // returns number
+      var windowBtm = windowTop + $(window).height();
+      //console.log("windowBtm " + windowBtm + " stopPoint " + stopPoint);
 
-      if (stopPoint - $(this).height() < windowTop) {
+      if (stopPoint <= windowBtm) {
       	if (flag == 0) {
       		flag = 1;
-      		scrollaway = stickyStopperPosition-2*generalSidebarHeight;
+      		scrollaway = stopPoint - generalSidebarHeight;
       	}
-          $sticky.css({ position: 'absolute', top: scrollaway });
+		//console.log("scrollaway " + scrollaway);
+        $sticky.css({ position: 'absolute', top: scrollaway });
       } else if (stickyTop < windowTop+stickOffset) {
           $sticky.css({ position: 'fixed', top: 0 });
       } else {
