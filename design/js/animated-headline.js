@@ -154,7 +154,7 @@ jQuery(document).ready(function($){
 
 
 
-$( document ).ready(function() {
+$(window).on("load", function() {
 
 	var $sticky = $('.sticky');
 	var $stickyStopper = $('.sticky-stopper');
